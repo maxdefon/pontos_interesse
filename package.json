@@ -1,0 +1,24 @@
+{
+  "name": "create-node-api",
+  "version": "1.0.0",
+  "description": "Project initial in Nodejs",
+  "main": "server.js",
+  "scripts": {
+    "start": " nodemon server.js",
+    "test": "mocha tests/**/*.js --reporter spec"
+  },
+  "author": "Max Lima",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0"
+  }
+}
