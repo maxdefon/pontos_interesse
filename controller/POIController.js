@@ -8,7 +8,7 @@ class POIController{
 
   register(data){
     let registerService = new RegisterService(data);
-    registerService.save();
+    return registerService.save();
   }
 
   list() {

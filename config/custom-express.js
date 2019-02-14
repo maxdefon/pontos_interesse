@@ -5,9 +5,9 @@ const cors = require('cors');
 
 module.exports = () => {
   let app = express();
-  app.use(express.urlencoded());
   app.use(cors());
 
+  app.use(bodyParser.urlencoded({'extended':'true'}));
   app.use(bodyParser.json());
   app.use(bodyParser.json({ type: 'application/json' }));
 

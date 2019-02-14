@@ -29,10 +29,9 @@ describe("Testando API", () => {
 			}
 		},
 		(error, response, body) => {
-			console.log(body);
 			let _body = convertJson(body);
 			expect(response.statusCode).to.equal(200);
-			expect(_body.msg).to.equal('Ponto de interesse cadastrado com sucesso!');
+			expect(_body.message).to.equal('Ponto de interesse cadastrado com sucesso!');
 
 			done();
 		});
@@ -48,7 +47,6 @@ describe("Testando API", () => {
 			done();
 		});
 	});
-
 
 	it('Deve retornar uma lista de pontos de interesse por proximidade', done => {
 		let _coordX = 20;  //Coordenada x
