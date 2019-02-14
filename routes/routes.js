@@ -24,7 +24,17 @@ module.exports = (app) => {
     });
 	})
 
-
-
+	//Rota para listar pontos de interesse por aproximação
+	app.get('/pois/listar-coordernadas/:coordinateX/:coordinateY/:maxDistance',
+  (req, res)=>{
+    let poiController = new POIController();
+    poiController.ListByCoordinates(req.params)
+    .then(data => {
+      res.json({'pois': data});
+    }).catch((error) => {
+      console.log(error);
+      res.json({'error': error});
+    });
+  })
 
 }

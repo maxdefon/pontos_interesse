@@ -48,13 +48,13 @@ describe("Testando API", () => {
 			done();
 		});
 	});
-	
+
 
 	it('Deve retornar uma lista de pontos de interesse por proximidade', done => {
 		let _coordX = 20;  //Coordenada x
 		let _coordY = 10;  //Coordenada y
 		let _maxD = 10;		// distância máxima
-		request(`${baseUrl}/pois/listar/${_coordX}/${_coordY}/${_maxD}`, (error, response, body) => {
+		request(`${baseUrl}/pois/listar-coordernadas/${_coordX}/${_coordY}/${_maxD}`, (error, response, body) => {
 			let _body = convertJson(body);
 
 			expect(response.statusCode).to.equal(200);

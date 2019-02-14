@@ -1,5 +1,7 @@
 const RegisterService = require('../services/RegisterPOIsService');
 const ListService = require('../services/ListPOIsService');
+const ListByCoordinatesService = require('../services/ListByCoordinatesService');
+
 
 
 class POIController{
@@ -12,6 +14,11 @@ class POIController{
   list() {
     let listService = new ListService();
     return listService.dataPOIs();
+  }
+
+  ListByCoordinates(data){
+    let listByCoordinates = new ListByCoordinatesService(data);
+    return listByCoordinates.getResult();
   }
 
 }
