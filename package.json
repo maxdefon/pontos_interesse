@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": " nodemon server.js",
-    "test": "mocha tests/**/*.js --reporter spec"
+    "test": "DEBUG=true mocha --exit tests/**/*.js --reporter spec"
   },
   "author": "Max Lima",
   "license": "ISC",
@@ -21,7 +21,9 @@
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "mocha": "^5.2.0",
+    "mockgoose": "^8.0.1",
     "nodemon": "^1.18.9",
+    "proxyquire": "^2.1.0",
     "request": "^2.88.0"
   }
 }
