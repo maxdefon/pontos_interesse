@@ -1,4 +1,4 @@
-const mongoose = require('../config/database');
+const mongoose = require('mongoose');
 
 const POIsSchema = new mongoose.Schema({
   name: String,

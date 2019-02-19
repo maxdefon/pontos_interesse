@@ -1,5 +1,9 @@
 const app = require('./config/custom-express')();
+const db = require('./config/database');
 
-app.listen(5000, function() {
-  console.log(`Servidor rodando na porta 5000`);
+db.connect().then(()=>{
+  app.listen(5000, () => {
+    console.log(`Servidor rodando na porta 5000`);
+  });
 });
+
