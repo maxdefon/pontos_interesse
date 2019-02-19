@@ -19,7 +19,7 @@ class ListByCoordinatesService{
           $maxDistance: this._maxDistance,
         }
       }
-    })
+    }).sort({"name": 1})
     return query;
   }
 

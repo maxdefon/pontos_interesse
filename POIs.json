@@ -1,0 +1,44 @@
+[
+    {
+		"name": "Posto",
+		"location": {
+		  "type": "Point",
+		  "coordinates":[31, 18]
+		}
+	},
+	{
+		"name": "Joalheria",
+		"location": {
+		  "type": "Point",
+		  "coordinates":[15, 12]
+		}
+	},
+	{
+		"name": "Floricultura",
+		"location": {
+		  "type": "Point",
+		  "coordinates":[19, 21]
+		}
+	},
+	{
+		"name": "Pub",
+		"location": {
+		  "type": "Point",
+		  "coordinates":[12, 8]
+		}
+    },
+	{
+		"name": "Supermercado",
+		"location": {
+		  "type": "Point",
+		  "coordinates":[23, 6]
+		}
+    },
+	{
+		"name": "Churrascaria",
+		"location": {
+		  "type": "Point",
+		  "coordinates":[28, 2]
+		}
+    }
+]
