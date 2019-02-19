@@ -19,7 +19,7 @@ npm test
 npm start
 ```
 
-###Observação
+### Observação
 
 Lembrado que para o server rodar com o banco é preciso a instalação do MongoDB local.
 
